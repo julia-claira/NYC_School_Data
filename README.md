@@ -4,43 +4,47 @@ Members: Jorene, Julia, Holly, Galen
                                                            
 # Project Overview:
 
-Using kaggle.com and Socrata Open Data API we aim to look at 4 data sets regarding the NYC Public School system. In general, each person was responsible for one dataset to transform and clean. Transformations included dropping columns that were across datasets, renaming columns, and dropping rows that were duplicates or contained null values. We created small, useful tables to work with in addition to merging all these tables together into one big table on the school ID.
+Using kaggle.com and Socrata Open Data API we aim to look at 4 data sets regarding the NYC Public School system. In general, each person was responsible for one dataset to transform and clean. Transformations included dropping columns that were across datasets, renaming columns, and dropping rows that were duplicates or contained null values. We created small, useful tables to work with in addition to merging all these tables together into one big table on the school ID. We also wrote this README file in a Google doc together and Holly attempted to add some formatting to this file.
 
 # File explanation:<br> 
 <strong>Files in main folder:</strong><br> 
 	<b>.gitignore</b> - contains git ignore items<br> 
-	<b>README.md</> - author: all<br> 
+	<b>README.md</> - author: all 
 	  <ul><li>This file with all the details about all the other files and some thoughts about our resources and process.</li></ul><br> 
-  <b>Attendance_tables.sql</> - author: Julia (with group input)<br> 
+  <b>Attendance_tables.sql</> - author: Julia (with group input) 
 	  <ul><li>All the individual sql code from everyone’s files added into one file.</li></ul><br> 
- <b> Nyc_schools2.ipynb</b> - author: Julia (with group input)<br> 
+ <b> Nyc_schools2.ipynb</b> - author: Julia (with group input) 
 	  <ul><li>Adding all the code from everyone’s individual jupyter notebooks</li> 
 	  <li>Doing some more clean up and merging the tables together.</li></ul><br> 
- <b> Proj_2_table_joins.sql</> - author: Julia (with group input)<br> 
-   <ul><li> SQL file of all our tables joined into one big table.</li></ul><br> 
+ <b> Proj_2_table_joins.sql</> - author: Julia (with group input)
+   <ul><li> SQL file of all our tables joined into one big table.</li></ul> 
 
 <strong>Resources Folder</strong> - contains all csv files used for clean up.<br> 
 
 <strong>backup folder</strong> - contains all individually created jupyter notebooks from all branches<br> 
-  <b>ETL_Scores.ipynb</b> - author: Galen<br>   
-    <ul><li>Notebook to clean up School_ELA.csv.</li></ul><br> 
-   <b>ETL Project_SchoolDirectory_and_Safetly.ipynb</b> - author:Jorene<br> 
-	<b> NYC SAT Cleanup.ipynb</b> - author: Holly<br> 
-    <ul><li> Cleanup of scores.csv.</li></ul><br> 
-  <b>NYC_holly_sqlTables.txt</b> - author: Holly<br>  
-    <ul><li>Put sql table creation file into .txt for easier work if Julia needed it for merging.</li></ul><br> 
-	<b>NYC_school_stats.sql</b> - author: Holly<br> 
-		<ul><li>SQL file with schema of all databases created based on scores.csv</li></ul><br> 
-  <b>Nyc_attendance_school.ipynb</b> - author: Julia<br> 
-  <b>Proj_2_table_joins.sql</b> - author: Julia (with group input)<br> 
-	  <ul><li>SQL file which created the main table joining </li></ul><br> 
+  <b>ETL_Scores.ipynb</b> - author: Galen   
+    <ul><li>Notebook to clean up School_ELA.csv.</li></ul> 
+   <b>ETL Project_SchoolDirectory_and_Safetly.ipynb</b> - author:Jorene 
+	<b> NYC SAT Cleanup.ipynb</b> - author: Holly
+    <ul><li> Cleanup of scores.csv.</li></ul>
+  <b>NYC_holly_sqlTables.txt</b> - author: Holly  
+    <ul><li>Put sql table creation file into .txt for easier work if Julia needed it for merging.</li></ul>
+	<b>NYC_school_stats.sql</b> - author: Holly
+		<ul><li>SQL file with schema of all databases created based on scores.csv</li></ul>
+  <b>Nyc_attendance_school.ipynb</b> - author: Julia
+  <b>Proj_2_table_joins.sql</b> - author: Julia (with group input)
+	  <ul><li>SQL file which created the main table joining </li></ul>
 		
 	 
 
 # Datasets Extracted:<br> 
 <b>High school directory(Jorene):</b>  https://www.kaggle.com/new-york-city/nyc-high-school-director<br> 
-  <ul><li>Dropped columns</ul></li><br> 
+  <ul><li>Dropped columns</li></ul><br> 
 <b>School attendance:</b>Data.cityofnewyork.us (Julia)
+<ul><li>Dropped columns</li>
+<li>Grouped by school id</li>
+<li>Calculated absent percentage</li>
+<li>Created sql file with schema</li></ul>
 <b>School Safety report (Jorene):</b> https://www.kaggle.com/new-york-city/ny-2010-2016-school-safety-report?select=2010-2016-school-safety-report.csv <br> 
   <ul><li>Dropped columns</li><br> 
   <li>Dropped duplicates</li><br> 
@@ -77,7 +81,8 @@ I used one dataset I found on Kaggle containing NYC school by id information suc
 <b>Transform:</b>
 After loading the csv into Jupyter notebooks, I created dataframes for:  location info, SAT scores, ethnicity. For each of these data frames I dropped NA and duplicates along with renaming columns to be more visually pleasing. I created a file to match the dataframes I created in SQL. 
 
-<b>Load:</b> Uploaded to my branch in the github repo for Julia to pull and merge together with the other notebooks. We worked on it together through screen sharing. This allowed not just one person to have to the the bulk of the merging and while she was typing, we could be looking up the next steps.
+<b>Load:</b> 
+Uploaded to my branch in the github repo for Julia to pull and merge together with the other notebooks. We worked on it together through screen sharing. This allowed not just one person to have to the the bulk of the merging and while she was typing, we could be looking up the next steps.
 	
 ## Julia School Attendance in NYC 2015-2018
  
