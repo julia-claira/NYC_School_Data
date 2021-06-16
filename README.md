@@ -6,51 +6,51 @@ Members: Jorene, Julia, Holly, Galen
 
 Using kaggle.com and Socrata Open Data API we aim to look at 4 data sets regarding the NYC Public School system. In general, each person was responsible for one dataset to transform and clean. Transformations included dropping columns that were across datasets, renaming columns, and dropping rows that were duplicates or contained null values. We created small, useful tables to work with in addition to merging all these tables together into one big table on the school ID.
 
-# File explanation:
-Files in main folder:
-	.gitignore - contains git ignore items
-	README.md - author: all
-	  This file with all the details about all the other files and some thoughts about our resources and process.
-  Attendance_tables.sql - author: Julia (with group input)
-	  All the individual sql code from everyone’s files added into one file.
-  Nyc_schools2.ipynb - author: Julia (with group input)
+# File explanation:<br> 
+Files in main folder:<br> 
+	.gitignore - contains git ignore items<br> 
+	README.md - author: all<br> 
+	  This file with all the details about all the other files and some thoughts about our resources and process.<br> 
+  Attendance_tables.sql - author: Julia (with group input)<br> 
+	  All the individual sql code from everyone’s files added into one file.<br> 
+  Nyc_schools2.ipynb - author: Julia (with group input)<br> 
 	  Adding all the code from everyone’s individual jupyter notebooks and then 
-	  Doing some more clean up and merging the tables together.
-  Proj_2_table_joins.sql - author: Julia (with group input)
-    SQL file of all our tables joined into one big table.
+	  Doing some more clean up and merging the tables together.<br> 
+  Proj_2_table_joins.sql - author: Julia (with group input)<br> 
+    SQL file of all our tables joined into one big table.<br> 
 
-Resources Folder - contains all csv files used for clean up.
+Resources Folder - contains all csv files used for clean up.<br> 
 
-backup folder - contains all individually created jupyter notebooks from all branches
-  ETL_Scores.ipynb - author: Galen  
-    Notebook to clean up School_ELA.csv.
-	ETL Project_SchoolDirectory_and_Safetly.ipynb - author:Jorene
-	NYC SAT Cleanup.ipynb - author: Holly
-    Cleanup of scores.csv.
-  NYC_holly_sqlTables.txt - author: Holly 
-    Put sql table creation file into .txt for easier work if Julia needed it for merging.
-	NYC_school_stats.sql - author: Holly
-		SQL file with schema of all databases created based on scores.csv
-  Nyc_attendance_school.ipynb - author: Julia
-  Proj_2_table_joins.sql - author: Julia (with group input)
-	  SQL file which created the main table joining 
+backup folder - contains all individually created jupyter notebooks from all branches<br> 
+  ETL_Scores.ipynb - author: Galen<br>   
+    Notebook to clean up School_ELA.csv.<br> 
+	ETL Project_SchoolDirectory_and_Safetly.ipynb - author:Jorene<br> 
+	NYC SAT Cleanup.ipynb - author: Holly<br> 
+    Cleanup of scores.csv.<br> 
+  NYC_holly_sqlTables.txt - author: Holly<br>  
+    Put sql table creation file into .txt for easier work if Julia needed it for merging.<br> 
+	NYC_school_stats.sql - author: Holly<br> 
+		SQL file with schema of all databases created based on scores.csv<br> 
+  Nyc_attendance_school.ipynb - author: Julia<br> 
+  Proj_2_table_joins.sql - author: Julia (with group input)<br> 
+	  SQL file which created the main table joining <br> 
 		
 	 
 
-# Datasets Extracted:
-High school directory(Jorene):  https://www.kaggle.com/new-york-city/nyc-high-school-director
-  Dropped columns
-Data.cityofnewyork.us (Julia) - school attendance
-School Safety report (Jorene): https://www.kaggle.com/new-york-city/ny-2010-2016-school-safety-report?select=2010-2016-school-safety-report.csv 
-  Dropped columns
-  Dropped duplicates
-  Dropped rows with missing data
-  Calculate a total school crime count
-SAT scores (Holly): https://www.kaggle.com/nycopendata/high-schools
-  Split file into tables: locations, students, SAT scores, cleaned_df
-  Dropped duplicates and rows with null values
-  Created sql file with schema of all tables 
-ELA Scores (Galen): https://www.kaggle.com/new-york-city/nyc-school-district-breakdowns
+# Datasets Extracted:<br> 
+High school directory(Jorene):  https://www.kaggle.com/new-york-city/nyc-high-school-director<br> 
+  Dropped columns<br> 
+Data.cityofnewyork.us (Julia) - school attendance<br> 
+School Safety report (Jorene): https://www.kaggle.com/new-york-city/ny-2010-2016-school-safety-report?select=2010-2016-school-safety-report.csv <br> 
+  Dropped columns<br> 
+  Dropped duplicates<br> 
+  Dropped rows with missing data<br> 
+  Calculate a total school crime count<br> 
+SAT scores (Holly): https://www.kaggle.com/nycopendata/high-schools<br> 
+  Split file into tables: locations, students, SAT scores, cleaned_df<br> 
+  Dropped duplicates and rows with null values<br> 
+  Created sql file with schema of all tables<br>  
+ELA Scores (Galen): https://www.kaggle.com/new-york-city/nyc-school-district-breakdowns<br> 
   Dropped rows not in relevant years, dropped redundant columns and found mean for multiple test-taking scores in the relevant year. Rows were   removed when attendance was too low, so there were uneven numbers of scores. 
 		
 
