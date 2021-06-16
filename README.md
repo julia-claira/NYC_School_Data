@@ -66,22 +66,22 @@ ELA Scores (Galen): https://www.kaggle.com/new-york-city/nyc-school-district-bre
 
 ## Jorene high school directory and school safety
 
-<b>Extract:</b> The datasets were downloaded as CSVs files from Kaggle. The files were imported into a Jupyter Notebook using Pandas. 
+Extract: The datasets were downloaded as CSVs files from Kaggle. The files were imported into a Jupyter Notebook using Pandas. 
 
-<b>Transform:<b> Both the school directory list and the safety report contained several columns of information. The school directory was paired down to school id, school name, borough, and total total students. The school safety data was reduced to school id, building code, location name, number of major crimes [Major N], number of other crimes [Oth N], number of non-criminal crimes [NoCrim N], property crimes [Prop C], and violent crimes [VioN].   Duplicates and records with missing data points were dropped. The total number of crimes for each school was calculated by summing all crime totals for the school. For both sets of data column names were changed to better match those of the other data sets. 
+Transform: Both the school directory list and the safety report contained several columns of information. The school directory was paired down to school id, school name, borough, and total total students. The school safety data was reduced to school id, building code, location name, number of major crimes [Major N], number of other crimes [Oth N], number of non-criminal crimes [NoCrim N], property crimes [Prop C], and violent crimes [VioN].   Duplicates and records with missing data points were dropped. The total number of crimes for each school was calculated by summing all crime totals for the school. For both sets of data column names were changed to better match those of the other data sets. 
 
-<b>Load:</b> The notebook was loaded into the project repo so it could be joined with the rest of the team’s files.  Individual notebooks were merged with nbmerge, and additional cleaning was done.  We created schemas for each of our databases in PgAdmin.  We used an inner join on school id to pull information from each individual dataset to generate a one table that shows facts about each school. 
+Load: The notebook was loaded into the project repo so it could be joined with the rest of the team’s files.  Individual notebooks were merged with nbmerge, and additional cleaning was done.  We created schemas for each of our databases in PgAdmin.  We used an inner join on school id to pull information from each individual dataset to generate a one table that shows facts about each school. 
 
 
 ## Holly SAT Scores
 
-<b>Extract:</b> 
+Extract: 
 I used one dataset I found on Kaggle containing NYC school by id information such as: school location information, school breakdown of ethnicity, and average SAT scores for 2015
 
-<b>Transform:</b>
+Transform:
 After loading the csv into Jupyter notebooks, I created dataframes for:  location info, SAT scores, ethnicity. For each of these data frames I dropped NA and duplicates along with renaming columns to be more visually pleasing. I created a file to match the dataframes I created in SQL. 
 
-<b>Load:</b> 
+Load: 
 Uploaded to my branch in the github repo for Julia to pull and merge together with the other notebooks. We worked on it together through screen sharing. This allowed not just one person to have to the the bulk of the merging and while she was typing, we could be looking up the next steps.
 	
 ## Julia School Attendance in NYC 2015-2018
