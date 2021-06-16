@@ -1,7 +1,6 @@
+-->final group join
 create table joined_nyc_table as
-select a."school id",a."School Name",a."Borough",a."Building Code",
-a."Street Address",a."City",a."State",a."Zip Code",a."Latitude",
-a."Longitude",a."Start Time", a."End Time", a."White",a."Black", a."Hispanic", a."Asian",
+select a."school id",a."School Name",a."Borough", a."White",a."Black", a."Hispanic", a."Asian",
 a."Avg Score Math",a."Avg Score Reading", a."Avg Score Writing",a."Tested Percent",
 c."Mean Scale Score",
 d.enrolled_2015_2018,d.present_2015_2018,

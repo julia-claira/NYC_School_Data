@@ -1,21 +1,20 @@
+-->Julia
 create table school_attendance (
 	"school id" VARCHAR PRIMARY KEY,
 	enrolled_2015_2018 INT,
 	present_2015_2018 INT,
 	absent_2015_2018 INT,
 	attendance_prc float);
-
 	
-drop table school_attendance
-
-
+-->Jorene
 Create Table schools(
 	"school id" varchar Primary Key,
 	school_name varchar,
 	borough varchar,
 	total_students float
 	);
-		
+
+-->Jorene
 Create Table safety(
 	"school id" varchar Primary Key,
 	"Building Code" varchar,
@@ -27,7 +26,8 @@ Create Table safety(
 	"Vio N" float,
 	total_crime float
 	);
-	
+
+-->Holly
 create table cleaned_df
 	("school id" varchar(10),
 	 "School Name" varchar,
@@ -51,7 +51,27 @@ create table cleaned_df
 	 "Avg Score Writing" integer,
 	 "Tested Percent" varchar
 	);
-	
+
+--Holly>
+create table SAT_Scores as
+select a."school id", a."Avg Score Math", a."Avg Score Reading", a."Avg Score Writing",
+a."Tested Percent"
+from cleaned_df as a
+
+--Holly>
+create table students_breakdown as
+select a."school id", a."Enrollment", a."White",a."Black", a."Hispanic",
+a."Asian"
+from cleaned_df as a
+
+--Holly>
+create table school_location as
+select a."school id",a."School Name",a."Borough",a."Building Code",
+a."Street Address",a."City",a."State",a."Zip Code",a."Latitude",
+a."Longitude",a."Start Time", a."End Time"
+from cleaned_df as a
+
+-->Galen
 Create Table school_scores(
 	"school id" varchar Primary Key,
 	"Mean Scale Score" float,
@@ -59,9 +79,8 @@ Create Table school_scores(
 	"Year" int
 	);
 	
-	drop table school_scores
 
-select * from school_scores
+
 
 
 
