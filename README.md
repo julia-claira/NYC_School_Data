@@ -1,7 +1,7 @@
 # project2_groupE_nyc
 Members: Jorene, Julia, Holly, Galen
          
-                                                            ## NYC Schools
+                                                           
 # Project Overview:
 
 Using kaggle.com and Socrata Open Data API we aim to look at 4 data sets regarding the NYC Public School system. In general, each person was responsible for one dataset to transform and clean. Transformations included dropping columns that were across datasets, renaming columns, and dropping rows that were duplicates or contained null values. We created small, useful tables to work with in addition to merging all these tables together into one big table on the school ID.
@@ -55,10 +55,10 @@ ELA Scores (Galen): https://www.kaggle.com/new-york-city/nyc-school-district-bre
 		
 
 
-## Individual ETL Process:
+# Individual ETL Process:
 
 
-# Jorene high school directory and school safety
+## Jorene high school directory and school safety
 
 Extract: The datasets were downloaded as CSVs files from Kaggle. The files were imported into a Jupyter Notebook using Pandas. 
 
@@ -67,7 +67,7 @@ Transform: Both the school directory list and the safety report contained severa
 Load: The notebook was loaded into the project repo so it could be joined with the rest of the team’s files.  Individual notebooks were merged with nbmerge, and additional cleaning was done.  We created schemas for each of our databases in PgAdmin.  We used an inner join on school id to pull information from each individual dataset to generate a one table that shows facts about each school. 
 
 
-# Holly SAT Scores
+## Holly SAT Scores
 
 Extract: 
 I used one dataset I found on Kaggle containing NYC school by id information such as: school location information, school breakdown of ethnicity, and average SAT scores for 2015
@@ -77,7 +77,7 @@ After loading the csv into Jupyter notebooks, I created dataframes for:  locatio
 
 Load: Uploaded to my branch in the github repo for Julia to pull and merge together with the other notebooks. We worked on it together through screen sharing. This allowed not just one person to have to the the bulk of the merging and while she was typing, we could be looking up the next steps.
 	
-# Julia School Attendance in NYC 2015-2018
+## Julia School Attendance in NYC 2015-2018
  
 Extract: Originally I was going to use a csv file found on Kaggle, however, it only covered the 2011 school year, which felt limiting. After a brief Google search I came across the NYC Open Data site (https://data.cityofnewyork.us/ ) with more up-to-date records and over a wider timespan. I was able to pull the data by importing the Socrata module (Socrata Open Data API) into my Python script.
  
@@ -88,7 +88,7 @@ Transform: This provided me with daily attendance reports for all NYC schools fr
 Load: We merged our separate Jupyter Notebooks together using nbmerge in Terminal. Once merged, we did some additional cleaning and unifying of column names. After generating the frameworks for the final tables in PgAdmin, we uploaded our transformed databases into them. In PgAdmin, we joined the tables into one using ‘school id’ as the common index. For this we used an inner join, as we were only interested in the schools that had data in all tables. Finally, after more discussion we dropped some columns that felt less relevant to the broader picture.
 
 
-# Galen ELA Scores:
+## Galen ELA Scores:
 
 Extract: Dataset was available as a large csv through Kaggle (https://www.kaggle.com/debanjanpaul/school-ela-results-20132017-public) , and is a collection of dated average scores for ELA (English Language Arts) tests. The csv had some irregularities that were immediately visible, such as a large amount of placeholder strings in the test score column and variable amounts of rows per school.
 
