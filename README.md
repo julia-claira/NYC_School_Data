@@ -7,51 +7,53 @@ Members: Jorene, Julia, Holly, Galen
 Using kaggle.com and Socrata Open Data API we aim to look at 4 data sets regarding the NYC Public School system. In general, each person was responsible for one dataset to transform and clean. Transformations included dropping columns that were across datasets, renaming columns, and dropping rows that were duplicates or contained null values. We created small, useful tables to work with in addition to merging all these tables together into one big table on the school ID.
 
 # File explanation:<br> 
-Files in main folder:<br> 
-	.gitignore - contains git ignore items<br> 
-	README.md - author: all<br> 
-	  This file with all the details about all the other files and some thoughts about our resources and process.<br> 
-  Attendance_tables.sql - author: Julia (with group input)<br> 
-	  All the individual sql code from everyone’s files added into one file.<br> 
-  Nyc_schools2.ipynb - author: Julia (with group input)<br> 
-	  Adding all the code from everyone’s individual jupyter notebooks and then 
-	  Doing some more clean up and merging the tables together.<br> 
-  Proj_2_table_joins.sql - author: Julia (with group input)<br> 
-    SQL file of all our tables joined into one big table.<br> 
+<strong>Files in main folder:</strong><br> 
+	<b>.gitignore</b> - contains git ignore items<br> 
+	<b>README.md</> - author: all<br> 
+	  <ul><li>This file with all the details about all the other files and some thoughts about our resources and process.</li></ul><br> 
+  <b>Attendance_tables.sql</> - author: Julia (with group input)<br> 
+	  <ul><li>All the individual sql code from everyone’s files added into one file.</li></ul><br> 
+ <b> Nyc_schools2.ipynb</b> - author: Julia (with group input)<br> 
+	  <ul><li>Adding all the code from everyone’s individual jupyter notebooks</li> 
+	  <li>Doing some more clean up and merging the tables together.</li></ul><br> 
+ <b> Proj_2_table_joins.sql</> - author: Julia (with group input)<br> 
+   <ul><li> SQL file of all our tables joined into one big table.</li></ul><br> 
 
-Resources Folder - contains all csv files used for clean up.<br> 
+<strong>Resources Folder</strong> - contains all csv files used for clean up.<br> 
 
-backup folder - contains all individually created jupyter notebooks from all branches<br> 
-  ETL_Scores.ipynb - author: Galen<br>   
-    Notebook to clean up School_ELA.csv.<br> 
-	ETL Project_SchoolDirectory_and_Safetly.ipynb - author:Jorene<br> 
-	NYC SAT Cleanup.ipynb - author: Holly<br> 
-    Cleanup of scores.csv.<br> 
-  NYC_holly_sqlTables.txt - author: Holly<br>  
-    Put sql table creation file into .txt for easier work if Julia needed it for merging.<br> 
-	NYC_school_stats.sql - author: Holly<br> 
-		SQL file with schema of all databases created based on scores.csv<br> 
-  Nyc_attendance_school.ipynb - author: Julia<br> 
-  Proj_2_table_joins.sql - author: Julia (with group input)<br> 
-	  SQL file which created the main table joining <br> 
+<strong>backup folder</strong> - contains all individually created jupyter notebooks from all branches<br> 
+  <b>ETL_Scores.ipynb</b> - author: Galen<br>   
+    <ul><li>Notebook to clean up School_ELA.csv.</li></ul><br> 
+   <b>ETL Project_SchoolDirectory_and_Safetly.ipynb</b> - author:Jorene<br> 
+	<b> NYC SAT Cleanup.ipynb</b> - author: Holly<br> 
+    <ul><li> Cleanup of scores.csv.</li></ul><br> 
+  <b>NYC_holly_sqlTables.txt</b> - author: Holly<br>  
+    <ul><li>Put sql table creation file into .txt for easier work if Julia needed it for merging.</li></ul><br> 
+	<b>NYC_school_stats.sql</b> - author: Holly<br> 
+		<ul><li>SQL file with schema of all databases created based on scores.csv</li></ul><br> 
+  <b>Nyc_attendance_school.ipynb</b> - author: Julia<br> 
+  <b>Proj_2_table_joins.sql</b> - author: Julia (with group input)<br> 
+	  <ul><li>SQL file which created the main table joining </li></ul><br> 
 		
 	 
 
 # Datasets Extracted:<br> 
-High school directory(Jorene):  https://www.kaggle.com/new-york-city/nyc-high-school-director<br> 
-  Dropped columns<br> 
-Data.cityofnewyork.us (Julia) - school attendance<br> 
-School Safety report (Jorene): https://www.kaggle.com/new-york-city/ny-2010-2016-school-safety-report?select=2010-2016-school-safety-report.csv <br> 
-  Dropped columns<br> 
-  Dropped duplicates<br> 
-  Dropped rows with missing data<br> 
-  Calculate a total school crime count<br> 
-SAT scores (Holly): https://www.kaggle.com/nycopendata/high-schools<br> 
-  Split file into tables: locations, students, SAT scores, cleaned_df<br> 
-  Dropped duplicates and rows with null values<br> 
-  Created sql file with schema of all tables<br>  
-ELA Scores (Galen): https://www.kaggle.com/new-york-city/nyc-school-district-breakdowns<br> 
-  Dropped rows not in relevant years, dropped redundant columns and found mean for multiple test-taking scores in the relevant year. Rows were   removed when attendance was too low, so there were uneven numbers of scores. 
+<b>High school directory(Jorene):</b>  https://www.kaggle.com/new-york-city/nyc-high-school-director<br> 
+  <ul><li>Dropped columns</ul></li><br> 
+<b>School attendance:</b>Data.cityofnewyork.us (Julia)
+<b>School Safety report (Jorene):</b> https://www.kaggle.com/new-york-city/ny-2010-2016-school-safety-report?select=2010-2016-school-safety-report.csv <br> 
+  <ul><li>Dropped columns</li><br> 
+  <li>Dropped duplicates</li><br> 
+  <li>Dropped rows with missing data</li><br> 
+  <li>Calculate a total school crime count</li></ul><br> 
+<b>SAT scores (Holly):</b https://www.kaggle.com/nycopendata/high-schools<br> 
+  <ul><li>Split file into tables: locations, students, SAT scores, cleaned_df</li><br> 
+  <li>Dropped duplicates and rows with null values</li><br> 
+  <li>Created sql file with schema of all tables</li></ul><br>  
+<b>ELA Scores (Galen):</b> https://www.kaggle.com/new-york-city/nyc-school-district-breakdowns<br> 
+  <ul><li>Dropped rows not in relevant years</li><br>
+  <li>Dropped redundant columns and found mean for multiple test-taking scores in the relevant year</li><br> 
+   <li>Rows were removed when attendance was too low, so there were uneven numbers of scores.</li></ul> 
 		
 
 
@@ -60,22 +62,22 @@ ELA Scores (Galen): https://www.kaggle.com/new-york-city/nyc-school-district-bre
 
 ## Jorene high school directory and school safety
 
-Extract: The datasets were downloaded as CSVs files from Kaggle. The files were imported into a Jupyter Notebook using Pandas. 
+<b>Extract:</b> The datasets were downloaded as CSVs files from Kaggle. The files were imported into a Jupyter Notebook using Pandas. 
 
-Transform: Both the school directory list and the safety report contained several columns of information. The school directory was paired down to school id, school name, borough, and total total students. The school safety data was reduced to school id, building code, location name, number of major crimes [Major N], number of other crimes [Oth N], number of non-criminal crimes [NoCrim N], property crimes [Prop C], and violent crimes [VioN].   Duplicates and records with missing data points were dropped. The total number of crimes for each school was calculated by summing all crime totals for the school. For both sets of data column names were changed to better match those of the other data sets. 
+<b>Transform:<b> Both the school directory list and the safety report contained several columns of information. The school directory was paired down to school id, school name, borough, and total total students. The school safety data was reduced to school id, building code, location name, number of major crimes [Major N], number of other crimes [Oth N], number of non-criminal crimes [NoCrim N], property crimes [Prop C], and violent crimes [VioN].   Duplicates and records with missing data points were dropped. The total number of crimes for each school was calculated by summing all crime totals for the school. For both sets of data column names were changed to better match those of the other data sets. 
 
-Load: The notebook was loaded into the project repo so it could be joined with the rest of the team’s files.  Individual notebooks were merged with nbmerge, and additional cleaning was done.  We created schemas for each of our databases in PgAdmin.  We used an inner join on school id to pull information from each individual dataset to generate a one table that shows facts about each school. 
+<b>Load:</b> The notebook was loaded into the project repo so it could be joined with the rest of the team’s files.  Individual notebooks were merged with nbmerge, and additional cleaning was done.  We created schemas for each of our databases in PgAdmin.  We used an inner join on school id to pull information from each individual dataset to generate a one table that shows facts about each school. 
 
 
 ## Holly SAT Scores
 
-Extract: 
+<b>Extract:</b> 
 I used one dataset I found on Kaggle containing NYC school by id information such as: school location information, school breakdown of ethnicity, and average SAT scores for 2015
 
-Transform:
+<b>Transform:</b>
 After loading the csv into Jupyter notebooks, I created dataframes for:  location info, SAT scores, ethnicity. For each of these data frames I dropped NA and duplicates along with renaming columns to be more visually pleasing. I created a file to match the dataframes I created in SQL. 
 
-Load: Uploaded to my branch in the github repo for Julia to pull and merge together with the other notebooks. We worked on it together through screen sharing. This allowed not just one person to have to the the bulk of the merging and while she was typing, we could be looking up the next steps.
+<b>Load:</b> Uploaded to my branch in the github repo for Julia to pull and merge together with the other notebooks. We worked on it together through screen sharing. This allowed not just one person to have to the the bulk of the merging and while she was typing, we could be looking up the next steps.
 	
 ## Julia School Attendance in NYC 2015-2018
  
