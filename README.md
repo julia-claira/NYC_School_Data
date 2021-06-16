@@ -40,7 +40,7 @@ README.md - author: all
 # Datasets Extracted:<br> 
 High school directory(Jorene):  https://www.kaggle.com/new-york-city/nyc-high-school-director<br> 
   <ul><li>Dropped columns</li></ul><br> 
-School attendance:Data.cityofnewyork.us (Julia)
+School attendance: Data.cityofnewyork.us (Julia)
 <ul><li>Dropped columns</li>
 <li>Grouped by school id</li>
 <li>Calculated absent percentage</li>
