@@ -7,21 +7,21 @@ Members: Jorene, Julia, Holly, Galen
 Using kaggle.com and Socrata Open Data API we aim to look at 4 data sets regarding the NYC Public School system. In general, each person was responsible for one dataset to transform and clean. Transformations included dropping columns that were across datasets, renaming columns, and dropping rows that were duplicates or contained null values. We created small, useful tables to work with in addition to merging all these tables together into one big table on the school ID. We also wrote this README file in a Google doc together and Holly attempted to add some formatting to this file.
 
 # File explanation:<br> 
-<strong>Files in main folder:</strong><br> 
+##Files in main folder:<br> 
 	<b>.gitignore</b> - contains git ignore items<br> 
 	<b>README.md</> - author: all 
 	  <ul><li>This file with all the details about all the other files and some thoughts about our resources and process.</li></ul><br> 
-  <b>Attendance_tables.sql</> - author: Julia (with group input) 
+  	<b>Attendance_tables.sql</> - author: Julia (with group input) 
 	  <ul><li>All the individual sql code from everyone’s files added into one file.</li></ul><br> 
- <b> Nyc_schools2.ipynb</b> - author: Julia (with group input) 
+ 	<b> Nyc_schools2.ipynb</b> - author: Julia (with group input) 
 	  <ul><li>Adding all the code from everyone’s individual jupyter notebooks</li> 
 	  <li>Doing some more clean up and merging the tables together.</li></ul><br> 
- <b> Proj_2_table_joins.sql</> - author: Julia (with group input)
-   <ul><li> SQL file of all our tables joined into one big table.</li></ul> 
+ 	<b> Proj_2_table_joins.sql</> - author: Julia (with group input)
+   	  <ul><li> SQL file of all our tables joined into one big table.</li></ul> 
 
-<strong>Resources Folder</strong> - contains all csv files used for clean up.<br> 
+##Resources Folder - contains all csv files used for clean up.<br> 
 
-<strong>backup folder</strong> - contains all individually created jupyter notebooks from all branches<br> 
+##backup folder - contains all individually created jupyter notebooks from all branches<br> 
   <b>ETL_Scores.ipynb</b> - author: Galen   
     <ul><li>Notebook to clean up School_ELA.csv.</li></ul> 
    <b>ETL Project_SchoolDirectory_and_Safetly.ipynb</b> - author:Jorene 
