@@ -8,53 +8,53 @@ Using kaggle.com and Socrata Open Data API we aim to look at 4 data sets regardi
 
 # File explanation:<br> 
 ## Files in main folder:<br> 
-	<b>.gitignore</b> - contains git ignore items<br> 
-	<b>README.md</> - author: all 
-	  <ul><li>This file with all the details about all the other files and some thoughts about our resources and process.</li></ul><br> 
-  	<b>Attendance_tables.sql</> - author: Julia (with group input) 
+.gitignore - contains git ignore items<br> 
+README.md - author: all 
+	 <ul><li>This file with all the details about all the other files and some thoughts about our resources and process.</li></ul><br> 
+  	Attendance_tables.sql - author: Julia (with group input) 
 	  <ul><li>All the individual sql code from everyone’s files added into one file.</li></ul><br> 
- 	<b> Nyc_schools2.ipynb</b> - author: Julia (with group input) 
+ 	 Nyc_schools2.ipynb - author: Julia (with group input) 
 	  <ul><li>Adding all the code from everyone’s individual jupyter notebooks</li> 
 	  <li>Doing some more clean up and merging the tables together.</li></ul><br> 
- 	<b> Proj_2_table_joins.sql</> - author: Julia (with group input)
+ 	Proj_2_table_joins.sql - author: Julia (with group input)
    	  <ul><li> SQL file of all our tables joined into one big table.</li></ul> 
 
 ## Resources Folder - contains all csv files used for clean up.<br> 
 
 ## Backup folder - contains all individually created jupyter notebooks from all branches<br> 
-  <b>ETL_Scores.ipynb</b> - author: Galen   
+  ETL_Scores.ipynb - author: Galen   
     <ul><li>Notebook to clean up School_ELA.csv.</li></ul> 
-   <b>ETL Project_SchoolDirectory_and_Safetly.ipynb</b> - author:Jorene 
+  ETL Project_SchoolDirectory_and_Safetly.ipynb - author:Jorene 
 	<b> NYC SAT Cleanup.ipynb</b> - author: Holly
     <ul><li> Cleanup of scores.csv.</li></ul>
-  <b>NYC_holly_sqlTables.txt</b> - author: Holly  
+  NYC_holly_sqlTables.txt - author: Holly  
     <ul><li>Put sql table creation file into .txt for easier work if Julia needed it for merging.</li></ul>
 	<b>NYC_school_stats.sql</b> - author: Holly
 		<ul><li>SQL file with schema of all databases created based on scores.csv</li></ul>
-  <b>Nyc_attendance_school.ipynb</b> - author: Julia
-  <b>Proj_2_table_joins.sql</b> - author: Julia (with group input)
+  Nyc_attendance_school.ipynb - author: Julia
+  Proj_2_table_joins.sql - author: Julia (with group input)
 	  <ul><li>SQL file which created the main table joining </li></ul>
 		
 	 
 
 # Datasets Extracted:<br> 
-<b>High school directory(Jorene):</b>  https://www.kaggle.com/new-york-city/nyc-high-school-director<br> 
+High school directory(Jorene):  https://www.kaggle.com/new-york-city/nyc-high-school-director<br> 
   <ul><li>Dropped columns</li></ul><br> 
-<b>School attendance:</b>Data.cityofnewyork.us (Julia)
+School attendance:Data.cityofnewyork.us (Julia)
 <ul><li>Dropped columns</li>
 <li>Grouped by school id</li>
 <li>Calculated absent percentage</li>
 <li>Created sql file with schema</li></ul>
-<b>School Safety report (Jorene):</b> https://www.kaggle.com/new-york-city/ny-2010-2016-school-safety-report?select=2010-2016-school-safety-report.csv <br> 
+School Safety report (Jorene): https://www.kaggle.com/new-york-city/ny-2010-2016-school-safety-report?select=2010-2016-school-safety-report.csv <br> 
   <ul><li>Dropped columns</li><br> 
   <li>Dropped duplicates</li><br> 
   <li>Dropped rows with missing data</li><br> 
   <li>Calculate a total school crime count</li></ul><br> 
-<b>SAT scores (Holly):</b https://www.kaggle.com/nycopendata/high-schools<br> 
+SAT scores (Holly): https://www.kaggle.com/nycopendata/high-schools<br> 
   <ul><li>Split file into tables: locations, students, SAT scores, cleaned_df</li><br> 
   <li>Dropped duplicates and rows with null values</li><br> 
   <li>Created sql file with schema of all tables</li></ul><br>  
-<b>ELA Scores (Galen):</b> https://www.kaggle.com/new-york-city/nyc-school-district-breakdowns<br> 
+ELA Scores (Galen): https://www.kaggle.com/new-york-city/nyc-school-district-breakdowns<br> 
   <ul><li>Dropped rows not in relevant years</li><br>
   <li>Dropped redundant columns and found mean for multiple test-taking scores in the relevant year</li><br> 
    <li>Rows were removed when attendance was too low, so there were uneven numbers of scores.</li></ul> 
