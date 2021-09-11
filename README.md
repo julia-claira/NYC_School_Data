@@ -1,8 +1,6 @@
-# project2_groupE_nyc
-Members: Jorene, Julia, Holly, Galen
-         
                                                            
 # Project Overview:
+
 
 Using kaggle.com and Socrata Open Data API we aim to look at 4 data sets regarding the NYC Public School system. In general, each person was responsible for one dataset to transform and clean. Transformations included dropping columns that were across datasets, renaming columns, and dropping rows that were duplicates or contained null values. We created small, useful tables to work with in addition to merging all these tables together into one big table on the school ID. We also wrote this README file in a Google doc together and Holly attempted to add some formatting to this file.
 
